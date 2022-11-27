@@ -1,3 +1,79 @@
 body {
   background: blanchedalmond;
 }
+
+
+
+@media(max-width: 649px)
+{
+  .a {
+      background-color: white;
+      width: auto;
+      height: 10vh;
+      border: 15px solid black;
+      padding: 50px;
+      margin: 20px;
+    }
+  
+    .b {
+      background-color: white;
+      width: auto;
+      height: 30vh;
+      border: 15px solid black;
+      padding: 50px;
+      margin: 20px;
+    }
+  
+    .c {
+      background-color: white;
+      width: auto;
+      height: 10vh;
+      border: 15px solid black;
+      padding: 50px;
+      margin: 20px;
+    }
+}
+
+@media(min-width: 650px) {
+
+  .container{
+    display: grid;
+    grid-template-columns: auto;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-auto-columns: 30vw;
+    grid-auto-rows: 31.5vh;
+  }
+
+  .a {
+    background-color: black;
+    border: 5px solid blue;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+   
+   
+    
+  }
+
+  .b {
+    background-color: black;
+    border: 5px solid blue;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    
+    
+  }
+
+  .c {
+    background-color: black;
+    border: 5px solid blue;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    
+  }
+}
