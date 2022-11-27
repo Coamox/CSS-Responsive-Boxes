@@ -41,7 +41,7 @@ body {
     grid-template-columns: auto;
     column-gap: 10px;
     row-gap: 10px;
-    grid-auto-columns: 30vw;
+    grid-auto-columns: auto;
     grid-auto-rows: 31.5vh;
   }
 
