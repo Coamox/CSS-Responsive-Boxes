@@ -4,76 +4,76 @@ body {
 
 
 
-@media(max-width: 649px)
+@media(max-width: 650px)
 {
   .a {
-      background-color: white;
-      width: auto;
-      height: 10vh;
-      border: 15px solid black;
-      padding: 50px;
-      margin: 20px;
+      grid-area: a;
+      background-color: black;
+      border: 5px solid blue;
     }
   
     .b {
-      background-color: white;
-      width: auto;
-      height: 30vh;
-      border: 15px solid black;
-      padding: 50px;
-      margin: 20px;
+      grid-area: b;
+      background-color: black;
+      border: 5px solid blue;
     }
   
     .c {
-      background-color: white;
-      width: auto;
-      height: 10vh;
-      border: 15px solid black;
-      padding: 50px;
-      margin: 20px;
+      grid-area: c;
+      background-color: black;
+      border: 5px solid blue;
     }
+
+    .container {
+      display: grid;
+      grid-template-columns: auto;
+      column-gap: 10px;
+      row-gap: 10px;
+      grid-auto-columns: auto;
+      grid-auto-rows: 18.5vh;
+      grid-template-areas:
+        "a a a"
+        "b b b"
+        "b b b"
+        "b b b"
+        "c c c";
+      }
 }
 
-@media(min-width: 650px) {
+@media(min-width: 651px) {
 
-  .container{
-    display: grid;
-    grid-template-columns: auto;
-    column-gap: 10px;
-    row-gap: 10px;
-    grid-auto-columns: auto;
-    grid-auto-rows: 31.5vh;
+  .container {
+      display: grid;
+      grid-template-columns: auto;
+      column-gap: 10px;
+      row-gap: 10px;
+      grid-auto-columns: auto;
+      grid-auto-rows: 31.5vh;
+      grid-template-areas:
+        "a a a a"
+        "b b b c"
+        "b b b c";
   }
 
   .a {
+    grid-area: a;
     background-color: black;
     border: 5px solid blue;
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 1;
-   
-   
-    
+
   }
 
   .b {
+    grid-area: b;
     background-color: black;
     border: 5px solid blue;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 4;
     
     
   }
 
   .c {
+    grid-area: c;
     background-color: black;
     border: 5px solid blue;
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 2;
-    grid-row-end: 4;
     
   }
 }
